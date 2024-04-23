@@ -140,4 +140,10 @@ Ctrl + b, Alt + 2
 
 MIT
 
+KEEP SAFE ---
 
+use hangilIOT;
+Update Equipments EQ
+inner join Equi_States ES on
+	ES.lora_id = EQ.lora_id
+set EQ.equi_state_id = ES.id;
